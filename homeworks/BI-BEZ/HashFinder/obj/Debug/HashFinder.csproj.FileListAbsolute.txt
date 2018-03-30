@@ -7,3 +7,8 @@ W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\H
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\nunit.framework.xml
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\obj\Debug\HashFinder.exe
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\obj\Debug\HashFinder.pdb
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\obj\Debug\HashFinder.csprojResolveAssemblyReference.cache
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\CommandLine.dll
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\System.Console.dll
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\System.Reflection.TypeExtensions.dll
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\CommandLine.xml

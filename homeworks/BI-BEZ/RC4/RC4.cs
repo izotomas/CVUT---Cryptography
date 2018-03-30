@@ -62,24 +62,5 @@ namespace RC4
             cipher.Reset();
             return buffer;
         }
-
-        public static void Main(string[] args)
-        {
-            const string key = "FDeaAs@TRc]Vi9V9";
-            const string plainText = "AHOJ"; 
-            var r1 = new RC4(key, null);
-            var r2 = new RC4(key, true);
-            // encrypting without IV
-            var result = r1.Encrypt(plainText);
-            var resultHex = r1.Encrypt(plainText, false, true);
-            Console.WriteLine("RC4 plain");
-            Console.WriteLine("CT: " + result);
-            Console.WriteLine("CT (hex): " + resultHex);
-            Console.WriteLine("KEY: " + r1.Key);
-            Console.WriteLine("IV: " + r1.IV);
-
-
-            Console.ReadLine();
-        }
     }
 }

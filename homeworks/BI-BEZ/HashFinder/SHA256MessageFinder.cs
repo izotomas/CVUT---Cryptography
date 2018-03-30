@@ -98,9 +98,5 @@ namespace HashFinder
             }
         }
 
-        public static void Main(string[] args)
-        {
-            LookForMessageWithHashPattern(args.Length >= 1? args[0] : null , "AA", "BB");
-        }
     }
 }
