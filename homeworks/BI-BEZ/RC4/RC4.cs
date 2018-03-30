@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Linq;
-using System.Security.Cryptography;
 using System.Text;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Engines;
@@ -11,10 +10,6 @@ namespace RC4
    
     public class RC4: IRC4
     {
-        public const string GeneratorPasswordCharSet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789[]{}(),.:;/\\!@#$%^&*";
-        public const int GeneratorPasswordDefaultLength = 16;
-        public const int GeneratorIVDefaultLength = 16;
-
         private readonly RC4Engine cipher;
         private readonly ICipherParameters cipherParams;
 
@@ -23,95 +18,50 @@ namespace RC4
         public string Key => _key;
         public string IV => _iv;
 
-        // Generate both key and IV (keyLenght optional)
-        public RC4(int keyLength = GeneratorPasswordDefaultLength): this(null, null, keyLength, true) { }
-        // Pass key (IV passing optional) 
-        public RC4(string key, string iv = null): this(key, iv, GeneratorPasswordDefaultLength) { }
-        // Pass key (IV generating optional)
-        public RC4(string key, bool enableIV): this(key, null, GeneratorPasswordDefaultLength, enableIV) { }
+        // Generate both key and IV (keyLenght optional) - for testing purposes only
+        public RC4(int keyLength = Utility.DefaultGeneratedPasswordLength): this(null, null, keyLength, true) { }
+        // Inject key (IV injection optional) 
+        public RC4(string key, string iv = null): this(key, iv, Utility.DefaultGeneratedPasswordLength) { }
+        // Inject key (IV generating optional)
+        public RC4(string key, bool enableIV): this(key, null, Utility.DefaultGeneratedPasswordLength, enableIV) { }
 
-        private RC4(string key = null, string iv = null, int keyLength = GeneratorPasswordDefaultLength, bool useIV = false)
+        private RC4(string key = null, string iv = null, int keyLength = Utility.DefaultGeneratedPasswordLength, bool generateIV = false)
         {
-            this._key = key ?? KeyGen(keyLength);
-            this._iv = useIV ? IVGen() : iv;
+            this._key = key ?? Utility.GeneratePassword(keyLength);
+            this._iv = generateIV ? Utility.ConvertToString(Utility.GenerateIV()) : iv;
             this.cipher = new RC4Engine();
             cipherParams = new KeyParameter(Encoding.UTF8.GetBytes(this.Key + this.IV));
         }
 
-        public byte[] Encrypt(string plainText)
+        public string Encrypt(string input, bool hexInput = false, bool hexOutput = false)
         {
-            var plainTextBytes = ConvertToBytes(plainText);
-            var ct = new byte[plainTextBytes.Length];
-            cipher.Init(true, cipherParams);
-            cipher.ProcessBytes(plainTextBytes, 0, plainTextBytes.Length, ct, 0);
-            //cipher.Reset(); //necessary??
-            return ct;
-        }
-
-        public string EncryptToStr(string plainText)
-        {
-            var ct = Encrypt(plainText);
-            var ctStr = ConvertToString(ct);
+            var ct = ProcessInput(true, input, hexInput);
+            var ctStr = hexOutput
+                ? Utility.ConvertToHexString(ct)
+                : Utility.ConvertToString(ct);
             return ctStr;
         }
 
-        public byte[] Decrypt(string cipherText)
+        public string Decrypt(string input, bool hexInput = false, bool hexOutput = false)
         {
-            var cipherTextBytes = ConvertToBytes(cipherText);
-            var pt = new byte[cipherTextBytes.Length];
-            cipher.Init(false, cipherParams);
-            cipher.ProcessBytes(cipherTextBytes, 0, cipherTextBytes.Length, pt, 0);
-            //cipher.Reset(); //necessary?
-            return pt;
-        }
-
-        public string DecryptToStr(string cipherText)
-        {
-            var pt = Decrypt(cipherText);
-            var ptStr = ConvertToString(pt);
+            var pt = ProcessInput(false, input, hexInput);
+            var ptStr = hexOutput
+                ? Utility.ConvertToHexString(pt)
+                : Utility.ConvertToString(pt);
             return ptStr;
         }
 
-        # region Helpers 
-
-        private string KeyGen(int len)
+        private byte[] ProcessInput(bool forEncrypting, string input, bool hexInput = false)
         {
-            var builder = new StringBuilder();
-            var rand = new RNGCryptoServiceProvider();
-            var buffer = new byte[len];
-            rand.GetBytes(buffer);
-            rand.Dispose();
-            foreach (var b in buffer)
-            {
-                var i = b % GeneratorPasswordCharSet.Length;
-                builder.Append(GeneratorPasswordCharSet[i]);
-            }
-            
-            return builder.ToString();
+            var inBytes = hexInput 
+                ? Utility.ConvertHexToBytes(input) 
+                : Utility.ConvertToBytes(input);
+            var buffer = new byte[inBytes.Length];
+            cipher.Init(forEncrypting, cipherParams);
+            cipher.ProcessBytes(inBytes, 0, inBytes.Length, buffer, 0);
+            cipher.Reset();
+            return buffer;
         }
-
-        private string IVGen()
-        {
-            var rand = new RNGCryptoServiceProvider();
-            var buffer = new byte[GeneratorIVDefaultLength];
-            rand.GetBytes(buffer);
-            rand.Dispose();
-            var iv = ConvertToString(buffer);
-            return iv;
-        }
-
-        private static byte[] ConvertToBytes(string text)
-        {
-            return text?.Select(Convert.ToByte).ToArray();
-        }
-
-        private static string ConvertToString(byte[] bytes)
-        {
-            return new string(bytes?.Select(Convert.ToChar).ToArray());
-        }
-        
-        #endregion
-
 
         public static void Main(string[] args)
         {
@@ -121,17 +71,13 @@ namespace RC4
             var r2 = new RC4(key, true);
             // encrypting without IV
             var result = r1.Encrypt(plainText);
+            var resultHex = r1.Encrypt(plainText, false, true);
             Console.WriteLine("RC4 plain");
-            Console.WriteLine("CT: " + string.Join("",Encoding.UTF8.GetChars(result)));
-            Console.WriteLine("CT (bytes): " + BitConverter.ToString(result));
+            Console.WriteLine("CT: " + result);
+            Console.WriteLine("CT (hex): " + resultHex);
             Console.WriteLine("KEY: " + r1.Key);
             Console.WriteLine("IV: " + r1.IV);
-            var result2 = r2.Encrypt(plainText);
-            Console.WriteLine("RC4 with IV");
-            Console.WriteLine("CT: " + string.Join("",Encoding.UTF8.GetChars(result2)));
-            Console.WriteLine("CT (bytes): " + BitConverter.ToString(result2));
-            Console.WriteLine("KEY: " + r2.Key);
-            Console.WriteLine("IV: " + r2.IV);
+
 
             Console.ReadLine();
         }

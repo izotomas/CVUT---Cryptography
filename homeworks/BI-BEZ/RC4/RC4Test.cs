@@ -1,5 +1,8 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using NUnit.Framework;
+using Org.BouncyCastle.Asn1;
 
 namespace RC4
 {
@@ -28,12 +31,15 @@ namespace RC4
     [TestFixture]
     public class RC4Test
     {
+        // checks only if output "somewhat makes sense", so testcases will have to be adjusted to it 
+        private readonly Regex regexForCrackerOutputValidation = new Regex(@"^(\w+(\s|[.!?\n])*)+$", RegexOptions.Compiled);
+
         [TestCase("poit9283nv", "40982jfvnme", "AHOJ")]
         public void InfluenceOfIVTest(string key, string iv, string plaintext)
         {
             // IV acts like randomizator, i.e. if it is used, encrypting two PTs with same key will return two different CTs
             // following test might fail at some times, but with reasonably low probability (due to IV randomness)
-            for (var i = 0; i < 100; i++)
+            for (var i = 0; i < 10; i++)
             {
                 var ciphers = new Dictionary<string, IRC4>
                 {
@@ -47,18 +53,19 @@ namespace RC4
 
                 var cipherTexts = new Dictionary<string, string>
                 {
-                    ["NoIV1"] = ciphers["NoIV1"].EncryptToStr(plaintext),
-                    ["NoIV2"] = ciphers["NoIV2"].EncryptToStr(plaintext),
-                    ["IV1"] = ciphers["IV1"].EncryptToStr(plaintext),
-                    ["IV2"] = ciphers["IV2"].EncryptToStr(plaintext),
-                    ["ConstIV1"] = ciphers["ConstIV1"].EncryptToStr(plaintext),
-                    ["ConstIV2"] = ciphers["ConstIV2"].EncryptToStr(plaintext),
+                    ["NoIV1"] = ciphers["NoIV1"].Encrypt(plaintext),
+                    ["NoIV2"] = ciphers["NoIV2"].Encrypt(plaintext),
+                    ["IV1"] = ciphers["IV1"].Encrypt(plaintext),
+                    ["IV2"] = ciphers["IV2"].Encrypt(plaintext),
+                    ["ConstIV1"] = ciphers["ConstIV1"].Encrypt(plaintext),
+                    ["ConstIV2"] = ciphers["ConstIV2"].Encrypt(plaintext),
                 };
 
                 
                 Assert.AreEqual(cipherTexts["NoIV1"], cipherTexts["NoIV2"]);
                 // Using the same IV twice on same PT with same key => not a good idea
                 Assert.AreEqual(cipherTexts["ConstIV1"], cipherTexts["ConstIV2"]);
+
                 Assert.AreNotEqual(cipherTexts["IV1"], cipherTexts["IV2"]);
                 Assert.AreNotEqual(cipherTexts["IV1"], cipherTexts["NoIV1"]);
                 Assert.AreNotEqual(cipherTexts["IV1"], cipherTexts["NoIV2"]);
@@ -72,10 +79,26 @@ namespace RC4
         {
             var encrypter = (IRC4) new RC4(key: key);
             var decrypter = (IRC4) new RC4(key: key);
+            var wrongDecrypter1 = (IRC4) new RC4(key: key, enableIV: true);
+            var wrongDecrypter2 = (IRC4) new RC4();
 
-            var ct = encrypter.EncryptToStr(message);
-            var pt = decrypter.DecryptToStr(ct);
-            Assert.AreEqual(message, pt);
+            var ct = encrypter.Encrypt(message);
+            var pt1 = decrypter.Decrypt(ct);
+            var pt2 = wrongDecrypter1.Decrypt(ct);
+            var pt3 = wrongDecrypter2.Decrypt(ct);
+            Assert.AreEqual(message, pt1);
+            Assert.AreNotEqual(message, pt2);
+            Assert.AreNotEqual(message, pt3);
         }
+
+        [TestCase("abcdefghijklmnopqrstuvwxyz0123", "06fb7405eba8d9e94fb1f28f0dd21fdec55fd54750ee84d95ecccf2b1b48", "33f6630eaea4dba152baf38d019c04cbc759c94544fb9a815dc68d7b5f1a")]
+        public void KnownPlainTextAttackTest(string pt, string ct, string unknown)
+        {
+            var result = RC4Cracker.DecryptToStr(pt, ct, unknown);
+            var match = regexForCrackerOutputValidation.Match(result);
+            Console.WriteLine("CRACKED: " + result);
+            Assert.True(match.Success);
+        }
+
     }
 }

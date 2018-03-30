@@ -1,4 +1,3 @@
-W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\obj\Debug\HashFinder.csprojResolveAssemblyReference.cache
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\obj\Debug\HashFinder.csproj.CoreCompileInputs.cache
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\HashFinder.exe.config
 W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\HashFinder\bin\Debug\HashFinder.exe

@@ -51,9 +51,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Utility.cs" />
     <Compile Include="IRC4.cs" />
     <Compile Include="RC4.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RC4Cracker.cs" />
     <Compile Include="RC4Test.cs" />
   </ItemGroup>
   <ItemGroup>
