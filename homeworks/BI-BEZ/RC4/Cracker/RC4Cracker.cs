@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections;
+using RC4;
 
-namespace RC4
+namespace Cracker
 {
     public class RC4Cracker 
     {

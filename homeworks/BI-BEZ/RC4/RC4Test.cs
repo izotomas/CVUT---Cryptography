@@ -1,8 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
+using Cracker;
 using NUnit.Framework;
-using Org.BouncyCastle.Asn1;
+using RC4.Cipher;
 
 namespace RC4
 {
@@ -43,12 +44,12 @@ namespace RC4
             {
                 var ciphers = new Dictionary<string, IRC4>
                 {
-                    ["NoIV1"] = new RC4(key),
-                    ["NoIV2"] = new RC4(key),
-                    ["IV1"] = new RC4(key, enableIV: true),
-                    ["IV2"] = new RC4(key, enableIV: true),
-                    ["ConstIV1"] = new RC4(key, iv),
-                    ["ConstIV2"] = new RC4(key, iv)
+                    ["NoIV1"] = new Cipher.RC4(key),
+                    ["NoIV2"] = new Cipher.RC4(key),
+                    ["IV1"] = new Cipher.RC4(key, enableIV: true),
+                    ["IV2"] = new Cipher.RC4(key, enableIV: true),
+                    ["ConstIV1"] = new Cipher.RC4(key, iv),
+                    ["ConstIV2"] = new Cipher.RC4(key, iv)
                 };
 
                 var cipherTexts = new Dictionary<string, string>
@@ -77,10 +78,10 @@ namespace RC4
         [TestCase("NFAf;k", "lmmflnapejp3nlvnlkjlfjsasmflmen")]
         public void EncryptionDecryptionTest(string key, string message)
         {
-            var encrypter = (IRC4) new RC4(key: key);
-            var decrypter = (IRC4) new RC4(key: key);
-            var wrongDecrypter1 = (IRC4) new RC4(key: key, enableIV: true);
-            var wrongDecrypter2 = (IRC4) new RC4();
+            var encrypter = (IRC4) new Cipher.RC4(key: key);
+            var decrypter = (IRC4) new Cipher.RC4(key: key);
+            var wrongDecrypter1 = (IRC4) new Cipher.RC4(key: key, enableIV: true);
+            var wrongDecrypter2 = (IRC4) new Cipher.RC4();
 
             var ct = encrypter.Encrypt(message);
             var pt1 = decrypter.Decrypt(ct);

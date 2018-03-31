@@ -3,6 +3,43 @@
   <component name="ContentModelStore">
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="BI-BEZ.sln" t="IncludeFlat" />
+      <e p="HashFinder" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="HashFinder.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="SHA256MessageFinder.cs" t="Include" />
+        <e p="SHA256MessageFinderTest.cs" t="Include" />
+      </e>
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="RC4" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Cracker" t="Include">
+          <e p="RC4Cracker.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Options" t="Include">
+          <e p="Options.cs" t="Include" />
+        </e>
+        <e p="packages.config" t="Include" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="RC4" t="Include">
+          <e p="IRC4.cs" t="Include" />
+          <e p="RC4.cs" t="Include" />
+        </e>
+        <e p="RC4.csproj" t="IncludeRecursive" />
+        <e p="RC4Test.cs" t="Include" />
+        <e p="Utility.cs" t="Include" />
+      </e>
     </e>
     <e p="$USER_HOME$/Library/Caches/Rider2017.3/resharper-host/local/Transient/ReSharperHost/v11/SolutionCaches/_BI-BEZ.744913966.00" t="ExcludeRecursive" />
   </component>

@@ -1,11 +1,9 @@
-﻿using System;
-using System.Linq;
-using System.Text;
+﻿using System.Text;
 using Org.BouncyCastle.Crypto;
 using Org.BouncyCastle.Crypto.Engines;
 using Org.BouncyCastle.Crypto.Parameters;
 
-namespace RC4
+namespace RC4.Cipher
 {
    
     public class RC4: IRC4

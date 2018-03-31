@@ -1,4 +1,4 @@
-﻿namespace RC4
+﻿namespace RC4.Cipher
 {
     public interface IRC4
     {

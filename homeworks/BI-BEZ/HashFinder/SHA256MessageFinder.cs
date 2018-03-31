@@ -8,13 +8,9 @@ using System.Security.Cryptography;
 namespace HashFinder
 {
     // Task: find a message such that it's hash (SHA-256) starts with bytes 0xAA,0xBB
-    public class SHA256MessageFinder
+    public static class SHA256MessageFinder
     {
-        public static readonly int MaxBufferLength = int.MaxValue;
-
-        private SHA256MessageFinder()
-        {
-        }
+        public const int MaxBufferLength = int.MaxValue;
 
         public static byte[] LookForMessageWithHashPattern(string fileName, params string[] startingPattern)
         {
