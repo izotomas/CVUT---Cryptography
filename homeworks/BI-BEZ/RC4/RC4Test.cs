@@ -93,6 +93,7 @@ namespace RC4
         }
 
         [TestCase("abcdefghijklmnopqrstuvwxyz0123", "06fb7405eba8d9e94fb1f28f0dd21fdec55fd54750ee84d95ecccf2b1b48", "33f6630eaea4dba152baf38d019c04cbc759c94544fb9a815dc68d7b5f1a")]
+        [TestCase("abcdefghijklmnopqrstuvwxyz0123", "06fb7405eba8d9e94fb1f28f0dd21fdec55fd54750ee84d95ecccf2b1b48", "33f6630eaea4dba152baf38d019c04cbc759c94544fb9a815dc68d7b5f1a")]
         [TestCase("ahoj","325c13ad","23550ca6")]
         public void KnownPlainTextAttackTest(string pt, string ct, string unknown)
         {

@@ -1,14 +1,3 @@
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.exe.config
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.exe
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.pdb
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/BouncyCastle.Crypto.dll
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.csprojResolveAssemblyReference.cache
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.csproj.CoreCompileInputs.cache
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.exe
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.pdb
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/nunit.framework.dll
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/nunit.framework.pdb
-W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/nunit.framework.xml
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.exe.config
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.exe
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/bin/Debug/RC4.pdb
@@ -25,3 +14,10 @@ W:/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/R
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.csproj.CoreCompileInputs.cache
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.exe
 /Users/tomasizo/Dropbox/Documents/School/Uni/Czech Republic/CVUT/Subjects/Security/homeworks/BI-BEZ/RC4/obj/Debug/RC4.pdb
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\bin\Debug\RC4.exe.config
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\bin\Debug\RC4.exe
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\bin\Debug\RC4.pdb
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\obj\Debug\RC4.csproj.CoreCompileInputs.cache
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\obj\Debug\RC4.exe
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\obj\Debug\RC4.pdb
+W:\Documents\School\Uni\Czech Republic\CVUT\Subjects\Security\homeworks\BI-BEZ\RC4\obj\Debug\RC4.csprojResolveAssemblyReference.cache

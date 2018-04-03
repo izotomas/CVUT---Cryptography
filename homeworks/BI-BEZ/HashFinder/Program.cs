@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Runtime.CompilerServices;
 using CommandLine;
 
 namespace HashFinder
@@ -7,7 +8,7 @@ namespace HashFinder
     {
         class Options
         {
-            [Option('o', "output")]
+            [Option('o', "output", Default = null)]
             public string OutputFileName { get; set; }
         }
         
@@ -15,7 +16,10 @@ namespace HashFinder
         {
             var result = CommandLine.Parser.Default.ParseArguments<Options>(args);
             result.WithParsed(opts =>
-                SHA256MessageFinder.LookForMessageWithHashPattern(opts.OutputFileName, "AA", "BB"));
+                {
+                    SHA256MessageFinder.LookForMessageWithHashPattern(opts.OutputFileName, "AA", "BB");
+                });
+            Environment.Exit(0);
         }
     }
 }

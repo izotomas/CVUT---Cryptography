@@ -34,6 +34,7 @@ namespace RC4
 
                     }
                 }
+                Environment.Exit(0);
             });
         }
     }

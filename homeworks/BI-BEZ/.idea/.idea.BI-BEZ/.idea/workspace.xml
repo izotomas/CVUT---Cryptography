@@ -13,12 +13,12 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RC4/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+            <state relative-caret-position="396">
+              <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
               <folding>
                 <marker date="1522519950977" expanded="true" signature="6:64" ph="..." />
                 <marker date="1522519950977" expanded="true" signature="79:1126" ph="{...}" />
@@ -36,8 +36,8 @@
       <file leaf-file-name="RC4Test.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/RC4/RC4Test.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="875">
-              <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="-814">
+              <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
               <folding>
                 <marker date="1522510794770" expanded="false" signature="6:141" ph="..." />
                 <marker date="1522510794770" expanded="true" signature="156:5344" ph="{...}" />
@@ -55,30 +55,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SHA256MessageFinder.cs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SHA256MessageFinder.cs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+            <state relative-caret-position="-970">
+              <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding>
-                <marker date="1522520067950" expanded="false" signature="6:145" ph="..." />
-                <marker date="1522520067950" expanded="true" signature="167:3435" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="299:3433" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="472:1159" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="588:1124" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="640:1079" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="682:875" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="917:1061" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="1253:2678" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="1537:2470" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="1664:2079" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="2130:2233" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="2280:2375" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="2782:2867" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="2964:3426" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="3010:3107" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="3124:3266" ph="{...}" />
-                <marker date="1522520067950" expanded="true" signature="3306:3416" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="6:119" ph="..." />
+                <marker date="1522741646834" expanded="true" signature="141:3409" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="273:3407" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="446:1133" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="562:1098" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="614:1053" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="656:849" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="891:1035" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="1227:2652" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="1511:2444" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="1638:2053" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="2104:2207" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="2254:2349" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="2756:2841" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="2938:3400" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="2984:3081" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="3098:3240" ph="{...}" />
+                <marker date="1522741646834" expanded="true" signature="3280:3390" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -99,17 +99,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HashFinder/Program.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+            <state relative-caret-position="375">
+              <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
-                <marker date="1522520316284" expanded="false" signature="6:32" ph="..." />
-                <marker date="1522520316284" expanded="true" signature="54:526" ph="{...}" />
-                <marker date="1522520316284" expanded="true" signature="81:524" ph="{...}" />
-                <marker date="1522520316284" expanded="true" signature="109:220" ph="{...}" />
-                <marker date="1522520316284" expanded="true" signature="276:518" ph="{...}" />
+                <marker date="1522741696044" expanded="true" signature="6:71" ph="..." />
+                <marker date="1522741696044" expanded="true" signature="93:655" ph="{...}" />
+                <marker date="1522741696044" expanded="true" signature="120:653" ph="{...}" />
+                <marker date="1522741696044" expanded="true" signature="148:275" ph="{...}" />
+                <marker date="1522741696044" expanded="true" signature="331:647" ph="{...}" />
+                <marker date="1522741696044" expanded="true" signature="462:602" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -122,7 +123,6 @@
               <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
               <folding>
                 <marker date="1522519953815" expanded="true" signature="6:32" ph="..." />
-                <marker date="1522519953815" expanded="true" signature="51:554" ph="{...}" />
                 <marker date="1522519953815" expanded="true" signature="78:552" ph="{...}" />
               </folding>
             </state>
@@ -133,16 +133,16 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/HashFinder/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RC4/RC4/IRC4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HashFinder/App.config" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinderTest.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/HashFinder/packages.config" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RC4/Program.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/RC4/RC4/IRC4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RC4/RC4Test.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RC4/RC4/RC4.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RC4/Cracker/RC4Cracker.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/RC4/Options/Options.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RC4/Program.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -175,7 +175,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -194,7 +194,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="SolutionExplorer">
         <subPane>
           <expand>
@@ -207,22 +206,18 @@
               <item name="BI-BEZ (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
               <item name="HashFinder" type="977d5f41:SolutionExplorerNodeRider" />
             </path>
-            <path>
-              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="BI-BEZ (2 projects)" type="977d5f41:SolutionExplorerNodeRider" />
-              <item name="RC4" type="977d5f41:SolutionExplorerNodeRider" />
-            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-file-system" value="false" />
         <option name="show-all-items" value="false" />
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="Inspections-MSBuild" />
     <property name="RiderNuGetCacheManager.AutoClear.global-packages" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.http-cache" value="2" />
     <property name="RiderNuGetCacheManager.AutoClear.packages-cache" value="2" />
@@ -313,11 +308,13 @@
       <updated>1522175801000</updated>
       <workItem from="1522175803338" duration="1523000" />
       <workItem from="1522499858207" duration="10759000" />
+      <workItem from="1522580636262" duration="393000" />
+      <workItem from="1522740984755" duration="784000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12282000" />
+    <option name="totallyTimeSpent" value="13459000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -329,7 +326,8 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Errors In Solution" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.21180555" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -368,6 +366,212 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RC4/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <marker date="1522519950977" expanded="true" signature="6:64" ph="..." />
+            <marker date="1522519950977" expanded="true" signature="79:1126" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="107:1124" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="161:1118" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="302:1106" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="632:1092" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="674:880" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="922:1074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <marker date="1522741646834" expanded="true" signature="6:119" ph="..." />
+            <marker date="1522741646834" expanded="true" signature="141:3409" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="273:3407" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="446:1133" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="562:1098" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="614:1053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="656:849" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="891:1035" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1227:2652" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1511:2444" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1638:2053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2104:2207" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2254:2349" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2756:2841" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2938:3400" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2984:3081" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3098:3240" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3280:3390" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinderTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1522330397975" expanded="false" signature="6:125" ph="..." />
+            <marker date="1522330397975" expanded="true" signature="147:849" ph="{...}" />
+            <marker date="1522330397975" expanded="true" signature="208:847" ph="{...}" />
+            <marker date="1522330397975" expanded="true" signature="364:841" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1522741696044" expanded="true" signature="6:71" ph="..." />
+            <marker date="1522741696044" expanded="true" signature="93:655" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="120:653" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="148:275" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="331:647" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="462:602" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/Options/Options.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1522519953815" expanded="true" signature="6:32" ph="..." />
+            <marker date="1522519953815" expanded="true" signature="78:552" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/RC4Test.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="29" column="71" lean-forward="false" selection-start-line="29" selection-start-column="71" selection-end-line="29" selection-end-column="71" />
+          <folding>
+            <marker date="1522510794770" expanded="false" signature="6:141" ph="..." />
+            <marker date="1522510794770" expanded="true" signature="156:5344" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="164:1669" ph="/* (1) Prozkoumejte vliv inicializačního vektoru na šifrový text. Zdůvodněte zjištění. ... */" />
+            <marker date="1522510794770" expanded="true" signature="1712:5342" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2081:3967" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2104:2331" ph="/* IV acts like randomizator, i.e. if it is used, encrypting two PTs with same key will return two different CTs ... */" />
+            <marker date="1522510794770" expanded="true" signature="2372:3957" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2462:2840" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2924:3361" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="4154:4770" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="5084:5335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
+          <folding>
+            <marker date="1522519950977" expanded="true" signature="6:64" ph="..." />
+            <marker date="1522519950977" expanded="true" signature="79:1126" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="107:1124" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="161:1118" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="302:1106" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="632:1092" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="674:880" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="922:1074" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/RC4Test.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1320">
+          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+          <folding>
+            <marker date="1522510794770" expanded="false" signature="6:141" ph="..." />
+            <marker date="1522510794770" expanded="true" signature="156:5344" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="164:1669" ph="/* (1) Prozkoumejte vliv inicializačního vektoru na šifrový text. Zdůvodněte zjištění. ... */" />
+            <marker date="1522510794770" expanded="true" signature="1712:5342" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2081:3967" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2104:2331" ph="/* IV acts like randomizator, i.e. if it is used, encrypting two PTs with same key will return two different CTs ... */" />
+            <marker date="1522510794770" expanded="true" signature="2372:3957" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2462:2840" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="2924:3361" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="4154:4770" ph="{...}" />
+            <marker date="1522510794770" expanded="true" signature="5084:5335" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinderTest.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <marker date="1522330397975" expanded="false" signature="6:125" ph="..." />
+            <marker date="1522330397975" expanded="true" signature="147:849" ph="{...}" />
+            <marker date="1522330397975" expanded="true" signature="208:847" ph="{...}" />
+            <marker date="1522330397975" expanded="true" signature="364:841" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+          <folding>
+            <marker date="1522741696044" expanded="true" signature="6:71" ph="..." />
+            <marker date="1522741696044" expanded="true" signature="93:655" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="120:653" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="148:275" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="331:647" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="462:602" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/Options/Options.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding>
+            <marker date="1522519953815" expanded="true" signature="6:32" ph="..." />
+            <marker date="1522519953815" expanded="true" signature="78:552" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+          <folding>
+            <marker date="1522741646834" expanded="true" signature="6:119" ph="..." />
+            <marker date="1522741646834" expanded="true" signature="141:3409" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="273:3407" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="446:1133" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="562:1098" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="614:1053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="656:849" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="891:1035" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1227:2652" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1511:2444" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1638:2053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2104:2207" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2254:2349" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2756:2841" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2938:3400" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2984:3081" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3098:3240" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3280:3390" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Hash/UnitTest1.cs" />
     <entry file="file://$PROJECT_DIR$/BI-BEZ.sln">
       <provider selected="true" editor-type-id="text-editor">
@@ -387,7 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -395,7 +598,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="10" lean-forward="false" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -403,15 +605,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1522510401837" expanded="true" signature="6:130" ph="..." />
-            <marker date="1522510401837" expanded="true" signature="152:2545" ph="{...}" />
-            <marker date="1522510401837" expanded="true" signature="185:2543" ph="{...}" />
-            <marker date="1522510401837" expanded="true" signature="1093:1401" ph="{...}" />
-            <marker date="1522510401837" expanded="true" signature="1493:1727" ph="{...}" />
-            <marker date="1522510401837" expanded="true" signature="1819:2054" ph="{...}" />
-            <marker date="1522510401837" expanded="true" signature="2148:2537" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,10 +612,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1522510383490" expanded="true" signature="20:232" ph="{...}" />
-            <marker date="1522510383490" expanded="true" signature="48:230" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -430,69 +619,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="261">
           <caret line="36" column="9" lean-forward="false" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <marker date="1522510794775" expanded="true" signature="6:50" ph="..." />
-            <marker date="1522510794775" expanded="true" signature="69:1833" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="100:1831" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="253:670" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="355:531" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="786:973" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="1064:1437" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="1523:1646" ph="{...}" />
-            <marker date="1522510794775" expanded="true" signature="1729:1825" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RC4/Options/RC4SubOptionsBase.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="49" lean-forward="false" selection-start-line="9" selection-start-column="49" selection-end-line="9" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RC4/Options/CrackSubOptions.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/RC4/Options/RC4SubOptionsBase.cs" />
+    <entry file="file://$PROJECT_DIR$/RC4/Options/CrackSubOptions.cs" />
     <entry file="file://$PROJECT_DIR$/RC4/Options/Options.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding>
             <marker date="1522519953815" expanded="true" signature="6:32" ph="..." />
-            <marker date="1522519953815" expanded="true" signature="51:554" ph="{...}" />
             <marker date="1522519953815" expanded="true" signature="78:552" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/RC4/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="35" column="16" lean-forward="false" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="16" />
-          <folding>
-            <marker date="1522519950977" expanded="true" signature="6:64" ph="..." />
-            <marker date="1522519950977" expanded="true" signature="79:1126" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="107:1124" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="161:1118" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="302:1106" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="632:1092" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="674:880" ph="{...}" />
-            <marker date="1522519950977" expanded="true" signature="922:1074" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/RC4/RC4Test.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="875">
-          <caret line="93" column="0" lean-forward="false" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="-814">
+          <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
           <folding>
             <marker date="1522510794770" expanded="false" signature="6:141" ph="..." />
             <marker date="1522510794770" expanded="true" signature="156:5344" ph="{...}" />
@@ -509,16 +655,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/HashFinder/Program.cs">
+    <entry file="file://$PROJECT_DIR$/RC4/Program.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
+        <state relative-caret-position="396">
+          <caret line="34" column="20" lean-forward="false" selection-start-line="34" selection-start-column="20" selection-end-line="34" selection-end-column="20" />
           <folding>
-            <marker date="1522520316284" expanded="false" signature="6:32" ph="..." />
-            <marker date="1522520316284" expanded="true" signature="54:526" ph="{...}" />
-            <marker date="1522520316284" expanded="true" signature="81:524" ph="{...}" />
-            <marker date="1522520316284" expanded="true" signature="109:220" ph="{...}" />
-            <marker date="1522520316284" expanded="true" signature="276:518" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="6:64" ph="..." />
+            <marker date="1522519950977" expanded="true" signature="79:1126" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="107:1124" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="161:1118" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="302:1106" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="632:1092" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="674:880" ph="{...}" />
+            <marker date="1522519950977" expanded="true" signature="922:1074" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -538,27 +687,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HashFinder/SHA256MessageFinder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="23" column="20" lean-forward="false" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
+        <state relative-caret-position="-970">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
-            <marker date="1522520067950" expanded="false" signature="6:145" ph="..." />
-            <marker date="1522520067950" expanded="true" signature="167:3435" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="299:3433" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="472:1159" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="588:1124" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="640:1079" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="682:875" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="917:1061" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="1253:2678" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="1537:2470" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="1664:2079" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="2130:2233" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="2280:2375" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="2782:2867" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="2964:3426" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="3010:3107" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="3124:3266" ph="{...}" />
-            <marker date="1522520067950" expanded="true" signature="3306:3416" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="6:119" ph="..." />
+            <marker date="1522741646834" expanded="true" signature="141:3409" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="273:3407" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="446:1133" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="562:1098" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="614:1053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="656:849" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="891:1035" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1227:2652" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1511:2444" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="1638:2053" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2104:2207" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2254:2349" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2756:2841" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2938:3400" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="2984:3081" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3098:3240" ph="{...}" />
+            <marker date="1522741646834" expanded="true" signature="3280:3390" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/HashFinder/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="25" column="0" lean-forward="true" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <marker date="1522741696044" expanded="true" signature="6:71" ph="..." />
+            <marker date="1522741696044" expanded="true" signature="93:655" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="120:653" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="148:275" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="331:647" ph="{...}" />
+            <marker date="1522741696044" expanded="true" signature="462:602" ph="{...}" />
           </folding>
         </state>
       </provider>

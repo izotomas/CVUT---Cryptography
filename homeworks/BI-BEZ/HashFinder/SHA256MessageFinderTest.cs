@@ -12,7 +12,7 @@ namespace HashFinder
         
         [TestCase("AA")]
         [TestCase("AA","BB")]
-        [TestCase("AA","BB", "CC")]
+        //[TestCase("AA","BB", "CC")]
         public void Test(params string[] pattern)
         {
             var result = SHA256MessageFinder.LookForMessageWithHashPattern(null, pattern);
