@@ -1,4 +1,7 @@
 *.vs/
+*bin/
+*obj/
+*Properties/
 *.pdb
 *.dll
 *.cache
