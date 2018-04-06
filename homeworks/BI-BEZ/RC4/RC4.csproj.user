@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|AnyCPU'">
-    <StartArguments>-u 33f6630eaea4dba152baf38d019c04cbc759c94544fb9a815dc68d7b5f1a -c 06fb7405eba8d9e94fb1f28f0dd21fdec55fd54750ee84d95ecccf2b1b48</StartArguments>
-  </PropertyGroup>
-</Project>
