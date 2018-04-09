@@ -67,12 +67,13 @@ namespace DESBitmap
             DES des = new DESCryptoServiceProvider();
             des.Mode = this.CipherMode;
             des.Key = this.Secret;
+            des.IV = new byte[]{0,0,0,0,0,0,0,0};
             var cryptoStream = forEncryption
                 ? new CryptoStream(fout, des.CreateEncryptor(), CryptoStreamMode.Write)
                 : new CryptoStream(fout, des.CreateDecryptor(), CryptoStreamMode.Write);
 
             //Read from the input file, then encrypt and write to the output file.
-            processedBytes += ProcessHeader(buff, fin,fout, cryptoStream, out var cryptoUsed);
+            processedBytes += ProcessHeader(buff, fin, fout, cryptoStream, out var cryptoUsed);
             
             while(processedBytes < totalBytes)
             {
@@ -92,16 +93,21 @@ namespace DESBitmap
             cryptoUsed = false;
             long proccessedBytes = 0;
             var len = fin.Read(buffer, 0, CHUNK_SIZE);
-            if (len > 10)
+            if (len > 14)
             {
                 var index = BitConverter.ToUInt32(buffer, 10);
                 var imageDataBegin = Convert.ToInt32(index);
+                if (fin.Length < imageDataBegin || imageDataBegin < 14)
+                {
+                    throw new ArgumentException("Bitmap of length " + fin.Length + 
+                                                " can't have start of pixel data at position " + imageDataBegin);
+                }
                 var chunkIdWithImageDataBegin = imageDataBegin / CHUNK_SIZE;
                 var imageDataBeginInChunk = imageDataBegin % CHUNK_SIZE;
                 // write headear as PT until reaching chunk with beginning of image data 
                 for (var i = 0; i < chunkIdWithImageDataBegin; i++)
                 {
-                    fout.Write(buffer,0, len);
+                    fout.Write(buffer, 0, len);
                     proccessedBytes += len;
                     len = fin.Read(buffer, 0, CHUNK_SIZE);
                 }
