@@ -32,12 +32,14 @@ namespace DESBitmap
         {
             var outName = GetOutName(fileName, true);
             ProcessInput(fileName, outName, true);
+            Console.WriteLine("{0} encrypted to file {1}", fileName, outName);
         }
 
         public void DecryptData(string fileName)
         {
             var outName = GetOutName(fileName, false);
             ProcessInput(fileName, outName, false);
+            Console.WriteLine("{0} decrypted to file {1}", fileName, outName);
         }
         
         public static byte[] GenerateKey()
@@ -88,21 +90,33 @@ namespace DESBitmap
         private long ProcessHeader(byte[] buffer, FileStream fin, FileStream fout, CryptoStream cryptoStream, out bool cryptoUsed)
         {
             cryptoUsed = false;
+            long proccessedBytes = 0;
             var len = fin.Read(buffer, 0, CHUNK_SIZE);
             if (len > 10)
             {
                 var index = BitConverter.ToUInt32(buffer, 10);
                 var imageDataBegin = Convert.ToInt32(index);
-                fout.Write(buffer, 0, imageDataBegin); //todo: case when imageDataBegin is in next frame...
-                cryptoStream.Write(buffer, imageDataBegin, len - imageDataBegin);
+                var chunkIdWithImageDataBegin = imageDataBegin / CHUNK_SIZE;
+                var imageDataBeginInChunk = imageDataBegin % CHUNK_SIZE;
+                // write headear as PT until reaching chunk with beginning of image data 
+                for (var i = 0; i < chunkIdWithImageDataBegin; i++)
+                {
+                    fout.Write(buffer,0, len);
+                    proccessedBytes += len;
+                    len = fin.Read(buffer, 0, CHUNK_SIZE);
+                }
+                fout.Write(buffer, 0, imageDataBeginInChunk);
+                cryptoStream.Write(buffer, imageDataBeginInChunk, len - imageDataBeginInChunk);
+                proccessedBytes += len;
                 cryptoUsed = true;
             }
             else
             {
                 fout.Write(buffer, 0, len);
+                proccessedBytes = len;
             }
 
-            return Convert.ToInt64(len);
+            return proccessedBytes;
         }
         
         private void SetValidOperationMode(CipherMode mode)
@@ -134,21 +148,14 @@ namespace DESBitmap
             }
             var sb = new StringBuilder();
             sb.Append(match.Groups["filename"].Value);
-            switch (CipherMode)
-            {
-                case CipherMode.ECB:
-                    sb.Append(forEncryption
-                        ? "_ecb"
-                        : "_dec");
-                    break;
-                case CipherMode.CBC:
-                    sb.Append(forEncryption
-                        ? "_cbc"
-                        : "_cbc_dec");
-                    break;
-            }
-            sb.Append(".bmp");
-
+            sb.Append(CipherMode == CipherMode.ECB
+                ? "_ecb"
+                : "_cbc"
+            );
+            sb.Append(forEncryption
+                ? ".bmp"
+                : "_dec.bmp"
+            );
             return sb.ToString();
         }
         

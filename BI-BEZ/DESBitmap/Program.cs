@@ -1,5 +1,5 @@
 ﻿// Autor: Izo Tomas
-using System;
+using System.Security.Cryptography;
 using CommandLine;
 using DESBitmap.Options;
 
@@ -25,17 +25,21 @@ namespace DESBitmap
 
         public static void Main(string[] args)
         {
+            DESUtility des;
             CommandLine.Parser.Default.ParseArguments<EncryptOptions, DecryptOptions>(args)
                 .MapResult(
                     (EncryptOptions opts) =>
                     {
-                        Console.WriteLine("Encryption\ninput => {0}\nkey => {1}\nmode => {2}", 
-                            opts.InputFile, opts.Key, opts.Mode);
+                        var isModeCBC = opts.Mode.Equals(CipherMode.CBC.ToString());
+                        des = new DESUtility(isModeCBC ? CipherMode.CBC : CipherMode.ECB, opts.Key);
+                        des.EncryptData(opts.InputFile);
                         return 0;
                     },
                     (DecryptOptions opts) =>
                     {
-                        Console.WriteLine("decrypt options");
+                        var isModeCBC = opts.Mode.Equals(CipherMode.CBC.ToString());
+                        des = new DESUtility(isModeCBC ? CipherMode.CBC : CipherMode.ECB, opts.Key);
+                        des.DecryptData(opts.InputFile);
                         return 0;
                     },
                     errs => 1);

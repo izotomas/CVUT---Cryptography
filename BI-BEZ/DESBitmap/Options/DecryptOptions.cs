@@ -12,7 +12,7 @@ namespace DESBitmap.Options
             get { yield return new Example("Decrypting", 
                 new DecryptOptions
                 {
-                    Key = "passwd12", InputFile = "image.bmp"
+                    Key = "passwd12", InputFile = "image.bmp", Mode = "CBC"
                 });
             }
         } 

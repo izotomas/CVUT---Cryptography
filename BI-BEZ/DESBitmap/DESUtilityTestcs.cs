@@ -17,8 +17,8 @@ namespace DESBitmap
         {
             var key = DESUtility.GenerateKey();
             var des = new DESUtility(CipherMode.ECB, key);
-            des.EncryptData(fileIn);
-            des.DecryptData(encFileOut);
+            Assert.That(() => des.EncryptData(fileIn), Throws.Nothing);
+            Assert.That(() => des.DecryptData(encFileOut), Throws.Nothing);
         }
         
         [TestCase("homer.bmp","homer_cbc.bmp")]
@@ -29,8 +29,8 @@ namespace DESBitmap
         {
             var key = DESUtility.GenerateKey();
             var des = new DESUtility(CipherMode.CBC, key);
-            des.EncryptData(fileIn);
-            des.DecryptData(encFileOut);
+            Assert.That(() => des.EncryptData(fileIn), Throws.Nothing);
+            Assert.That(() => des.DecryptData(encFileOut), Throws.Nothing);
         }
 
     }
