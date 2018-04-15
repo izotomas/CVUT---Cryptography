@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RC4", "RC4\RC4.csproj", "{0
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DESBitmap", "DESBitmap\DESBitmap.csproj", "{C463ACB9-A0E2-4420-B4C5-1B46D4C916EA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamCipherBonus", "StreamCipherBonus\StreamCipherBonus.csproj", "{DE59D209-0510-4268-BC2B-F9A2371CE07C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C463ACB9-A0E2-4420-B4C5-1B46D4C916EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C463ACB9-A0E2-4420-B4C5-1B46D4C916EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C463ACB9-A0E2-4420-B4C5-1B46D4C916EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE59D209-0510-4268-BC2B-F9A2371CE07C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE59D209-0510-4268-BC2B-F9A2371CE07C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE59D209-0510-4268-BC2B-F9A2371CE07C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE59D209-0510-4268-BC2B-F9A2371CE07C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
