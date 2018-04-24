@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StreamCipherBonus", "Stream
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BackupUtility", "RSABackup\BackupUtility.csproj", "{FEEDA0A6-9808-4401-BEA5-438A76C6A44A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SSLDownloader", "SSLDownloader\SSLDownloader.csproj", "{8028B38F-FF15-4A89-8D27-A2886147033D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{FEEDA0A6-9808-4401-BEA5-438A76C6A44A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FEEDA0A6-9808-4401-BEA5-438A76C6A44A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FEEDA0A6-9808-4401-BEA5-438A76C6A44A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8028B38F-FF15-4A89-8D27-A2886147033D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8028B38F-FF15-4A89-8D27-A2886147033D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8028B38F-FF15-4A89-8D27-A2886147033D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8028B38F-FF15-4A89-8D27-A2886147033D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
